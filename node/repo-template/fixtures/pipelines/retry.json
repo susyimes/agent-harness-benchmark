@@ -1,0 +1,5 @@
+{
+  "tasks": [
+    {"id": "flaky", "script": "scripts/flaky.js", "cwd": "../workspace/project-a", "retries": 2}
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "tasks": [
+    {"id": "ok", "script": "scripts/ok.js", "cwd": "../workspace/project-a"}
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "tasks": [
+    {"id": "slow", "script": "scripts/slow.js", "cwd": "../workspace/project-a", "timeoutMs": 50}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "node-mini-ci-runner-benchmark",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test tests/*.test.js tests/integration/*.test.js",
+    "run": "node src/cli.js"
+  }
+}
