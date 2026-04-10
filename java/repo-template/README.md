@@ -18,10 +18,14 @@
 
 ## 本地运行
 
+如果机器已安装 Maven：
+
 ```bash
 mvn test
 mvn -q exec:java -Dexec.args="search data/app.log error"
 ```
+
+如果机器未安装 Maven，请先安装 Maven 3.9+，或后续补充 Maven Wrapper 后再运行。
 
 ## baseline 特征
 
