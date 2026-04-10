@@ -1,0 +1,3 @@
+2026-03-01T10:23:45Z [INFO] User login success userId=1001
+not-a-valid-log-line
+2026-03-01T10:24:01Z [ERROR] Payment failed orderId=O1009
