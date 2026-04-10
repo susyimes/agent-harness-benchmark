@@ -44,3 +44,63 @@
 - Performance：benchmark 结果
 - Process Quality：中间步骤、总结质量、可审查性
 - Tool Efficiency：耗时、重复操作、无效改动
+
+##  推荐使用流程
+
+### Step 1：选择一门语言题
+
+如果你想先低成本验证 agent 框架，建议优先：
+
+- `python/repo-template/`
+- `node/repo-template/`
+
+### Step 2：进入 baseline 仓库
+
+例如：
+
+```bash
+cd python/repo-template
+```
+
+或：
+
+```bash
+cd node/repo-template
+```
+
+### Step 3：记录 baseline 初始状态
+
+在把任务交给 agent 之前，先记录：
+
+- 当前 commit hash
+- 当前测试命令
+- 初始测试结果
+- 当前已知失败数
+
+例如：
+
+```bash
+python -m pytest -q
+npm test
+```
+
+### Step 4：将任务交给目标 agent framework
+
+建议给 agent 的目标至少包括：
+
+1. 修复当前失败测试
+2. 满足 `TASK.md` 描述的能力要求
+3. 新增回归测试
+4. 保持项目结构清晰
+5. 输出修改总结
+
+### Step 5：记录交付结果
+
+至少记录：
+
+- 最终测试结果
+- 总耗时
+- 修改文件数
+- 新增测试数
+- 是否更新文档
+- 是否引入新回归
