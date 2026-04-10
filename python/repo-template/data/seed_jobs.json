@@ -1,0 +1,4 @@
+[
+  {"job_id": "job-1", "payload": {"action": "success"}, "max_retries": 0},
+  {"job_id": "job-2", "payload": {"action": "fail", "message": "boom"}, "max_retries": 1}
+]
